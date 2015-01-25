@@ -3,7 +3,7 @@ from opengl.BaseObject.Base import Base
 
 class Face(Base):
 	"""
-		this is an interface for generating an polygon in NielsOGL
+		this is an interface for generating an polygon in PyGEF
 	"""
 
 	def __init__(self):

@@ -4,7 +4,7 @@ OpenGL.FULL_LOGGING = True
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
-from NielsOGL.Renderer.glRender import *
+from PyGEF.Renderer.glRender import *
 import sys
 # so instead of saying: ESCAPE = 27, we use the following.
 ESCAPE = '\033'
@@ -16,8 +16,8 @@ def keyPressed(*args):
 
 class OGLInterface():
 	"""
-		interface for the NielsOGL renderer, this is interchangeable for your own renderer.
-		The renderer interface here just initializes the NielsOGL interface.
+		interface for the PyGEF renderer, this is interchangeable for your own renderer.
+		The renderer interface here just initializes the PyGEF interface.
 		You can overwrite this interface and implement your own interface for your own renderer.
 	"""
 

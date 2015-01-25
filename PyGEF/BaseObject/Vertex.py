@@ -4,7 +4,7 @@ from opengl.BaseObject.Base import Base
 
 class Vertex(Base):
 	"""
-		this is a vertex model to translate the vertex data from obj files to NielsOGL.
+		this is a vertex model to translate the vertex data from obj files to PyGEF.
 	"""
 
 	def __init__(self, x, y, z):
