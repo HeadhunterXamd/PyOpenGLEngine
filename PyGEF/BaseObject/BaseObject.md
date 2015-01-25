@@ -4,7 +4,8 @@ In this package are the base objects,
 
 | base object | 
 | ----------- |
-| [Face](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/BaseObject/Face.py) |
-| [Mesh](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/BaseObject/Mesh.py) | 
-| [Vertex](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/BaseObject/Vertex.py) | 
-| [Material](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/BaseObject/Material.py) |
+| [Base] (https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/Base.py)|
+| [Face](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/Face.py) |
+| [Mesh](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/Mesh.py) | 
+| [Vertex](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/Vertex.py) | 
+| [Material](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/Material.py) |

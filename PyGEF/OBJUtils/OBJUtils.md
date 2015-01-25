@@ -6,4 +6,4 @@ I will make a proper file parser with standard inheritance and make one obj pars
 
 | OBJ Utils |
 | --------- |
-| [OBJParser](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/OBJUtils/OBJParser.py) |
+| [OBJParser](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/OBJUtils/OBJParser.py) |

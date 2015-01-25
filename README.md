@@ -5,9 +5,9 @@ Modularity in such a way that you can replace the module with your own module if
 
 ## opengl
 
-| BaseObject | OBJUtils | openGLInterface | pathUtils |
-| ---------- | -------- | --------------- | --------- |
-| [BaseObject](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/BaseObject/BaseObject.md)      | [OBJUtils](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/OBJUtils/OBJUtils.md) | [PythonOpenGLInterface](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/openGLInterface/openGLInterface.md) | [pathFunctions](http://git.swagmentationfault.com/nielsvs/python-realtime-opengl-render-engine/blob/master/opengl/pathUtils/pathutils.md) |
+| BaseObject | OBJUtils | openGLInterface | pathUtils | Renderer |
+| ---------- | -------- | --------------- | --------- | -------- |
+| [BaseObject](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/BaseObject/BaseObject.md)      | [OBJUtils](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/OBJUtils/OBJUtils.md) | [PythonOpenGLInterface](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/openGLInterface/openGLInterface.md) | [pathFunctions](https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/pathUtils/pathutils.md) | {renderLib] (https://github.com/HeadhunterXamd/PyOpenGLEngine/blob/master/PyGEF/Renderer/glRender.py) |
 
 
 in every package there is an packagename.md file which will explain the goals in the scope of the package
