@@ -18,7 +18,7 @@ class Face(Base):
 
 	def addVertex(self, vertex)->bool:
 		""" add a vertex to the members list, easier to manage than a huge list of vertexes """
-		if(len(self.vertexMembers) <= 3):
+		if(len(self.vertexMembers) < 3):
 			self.vertexMembers.append(vertex)
 			return True
 		else:
