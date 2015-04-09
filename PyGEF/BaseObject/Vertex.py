@@ -3,11 +3,9 @@ from opengl.BaseObject.Base import Base
 
 
 class Vertex(Base):
-	"""
-		this is a vertex model to translate the vertex data from obj files to PyGEF.
-	"""
 
 	def __init__(self, x, y, z):
+	""" this is a vertex model to translate the vertex data from 3d files to PyGEF. """
 		super().__init__()
 		self.x = x
 		self.y = y
@@ -19,7 +17,7 @@ class Vertex(Base):
 
 
 	def getVertexPosition(self):
-		""" return vertex location data through interface of x, y, z """
+		""" return vertex location data through a tuple of x, y, z """
 		return self.x, self.y, self.z
 
 	def getPosition(self):
