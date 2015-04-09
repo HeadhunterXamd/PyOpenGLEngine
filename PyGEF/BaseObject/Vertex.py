@@ -20,6 +20,7 @@ class Vertex(Base):
 		return [self.x, self.y, self.z]
 
 	def translate(self, vec):
+		""" move vertex based on the vector as parameter """
 		self.x += vec[0]
 		self.y += vec[1]
 		self.z += vec[2]
