@@ -15,12 +15,8 @@ class Vertex(Base):
 	def __str__(self):
 		return str(self.x, self.y, self.z)
 
-
-	def getVertexPosition(self):
-		""" return vertex location data through a tuple of x, y, z """
-		return self.x, self.y, self.z
-
 	def getPosition(self):
+		""" returns a list of 3 numbers which represent the position of the vertex """
 		return [self.x, self.y, self.z]
 
 	def translate(self, vec):
