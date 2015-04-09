@@ -28,7 +28,10 @@ class OBJParser():
 		dataFile.seek(0, 0)
 
 		for line in range(length):
-			self.parseLine(dataFile.readline())
+			if self.parseLine(dataFile.readline()) is False:
+				print("data in line {a} is faulty: \n------\n{b}\n------".format(
+					a=line, b=dataFile.readline))
+				
 
 		dataFile.close()
 
@@ -41,18 +44,20 @@ class OBJParser():
 			data.append(eval(co))
 
 		self.vertex[len(self.vertex)+1] = Vertex(data[0], data[1], data[2])
+		return True
 
 
 	def parseFaceData(self, line:str):
 		""" parse the face data for which vertexes  """
-		fa = line.split(" ")
-		fa.pop(0)
+		faceData = line.split(" ")
+		faceData.pop(0)
 		newFace = Face()
 
 		for facemember in fa:
 			newFace.addVertex(self.vertex[eval(facemember)])
 
 		self.faces.append(newFace)
+		return True
 
 	def getMeshObject(self):
 		""" parse the faces and insert them to a mesh object """
@@ -67,12 +72,13 @@ class OBJParser():
 		""" check what kind of line it is """
 		if "v" in line[0]:
 			return self.parseVertexData(line)
+		# f indicates in the .obj that the line is data for a face
 		elif "f" in line[0]:
 			return self.parseFaceData(line)
 		else:
-			return line
+			return False
 
 
 	def fileLength(self, file):
-		l = sum(1 for line in file)
-		return l
+		length = sum(1 for line in file)
+		return length
