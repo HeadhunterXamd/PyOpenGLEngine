@@ -1,8 +1,8 @@
 __author__ = 'nielsvanschooten'
-import os, inspect
+import os
 
 
 
 
-def getCurrentDirectory():
-	return  os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+def getCurrentDirectory(file=__file__):
+	return  os.path.dirname(os.path.abspath(file))
