@@ -1,8 +1,8 @@
 __author__ = 'nielsvanschooten'
-from opengl.BaseObject.Vertex import Vertex
-from opengl.BaseObject.Face import Face
-from opengl.BaseObject.Mesh import Mesh
-from opengl.pathUtils import pathFunctions
+from PyGEF.BaseObject.Vertex import Vertex
+from PyGEF.BaseObject.Face import Face
+from PyGEF.BaseObject.Mesh import Mesh
+from PyGEF.pathUtils import pathFunctions
 
 
 class OBJParser():
