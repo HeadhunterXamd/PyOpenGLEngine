@@ -1,5 +1,5 @@
 __author__ = 'nielsvanschooten'
-from opengl.BaseObject.Base import Base
+from Base import Base
 
 
 
@@ -7,11 +7,12 @@ from opengl.BaseObject.Base import Base
 
 class Mesh(Base):
 	"""
-		base mesh class, combined with material usable as
+		base mesh class, combined with material usable as object.
+		this has a separate position and the vertexPosition is based on this.
 	"""
 
 	def __init__(self):
-		super().__init__()
+		super().__init__(0,0,0)
 		self.facemembers = []
 		self.material = None
 

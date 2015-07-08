@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6edd15ed-9e28-49d0-9e2a-27fe6b6d2402}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>OBJUtils\OBJParser.py</StartupFile>
+    <SearchPath>D:\nvanschooten\PyOpenGLEngine\trunk\PyGEF; D:\nvanschooten\PyOpenGLEngine\trunk\PyGEF\BaseObject; D:\nvanschooten\PyOpenGLEngine\trunk\PyGEF\OBJUtils</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{fdc06a9b-2637-4512-932c-12935d809046}</InterpreterId>
+    <InterpreterVersion>3.2</InterpreterVersion>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BaseObject\Base.py" />
+    <Compile Include="BaseObject\Face.py" />
+    <Compile Include="BaseObject\Material.py" />
+    <Compile Include="BaseObject\Mesh.py" />
+    <Compile Include="BaseObject\Vertex.py" />
+    <Compile Include="BaseObject\__init__.py" />
+    <Compile Include="OBJUtils\OBJParser.py" />
+    <Compile Include="OBJUtils\__init__.py" />
+    <Compile Include="openGLInterface\pyogl.py" />
+    <Compile Include="openGLInterface\PythonOpenGLInterface.py" />
+    <Compile Include="openGLInterface\__init__.py" />
+    <Compile Include="pathUtils\pathFunctions.py" />
+    <Compile Include="pathUtils\__init__.py" />
+    <Compile Include="Renderer\glRender.py" />
+    <Compile Include="Renderer\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseObject" />
+    <Folder Include="OBJUtils" />
+    <Folder Include="openGLInterface" />
+    <Folder Include="pathUtils" />
+    <Folder Include="Renderer" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{fdc06a9b-2637-4512-932c-12935d809046}\3.2" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

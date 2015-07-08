@@ -1,8 +1,7 @@
 __author__ = 'nielsvanschooten'
-from opengl.BaseObject.Base import Base
 
 
-class Material(Base):
+class Material:
 	"""
 		The base class of the material
 	"""

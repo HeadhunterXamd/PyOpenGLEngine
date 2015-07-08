@@ -2,7 +2,7 @@ __author__ = 'nielsvanschooten'
 from PyGEF.BaseObject.Vertex import Vertex
 from PyGEF.BaseObject.Face import Face
 from PyGEF.BaseObject.Mesh import Mesh
-from PyGEF.pathUtils import pathFunctions
+from pathUtils import pathFunctions
 
 
 class OBJParser():

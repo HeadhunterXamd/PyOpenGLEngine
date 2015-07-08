@@ -1,13 +1,13 @@
 __author__ = 'nielsvanschooten'
-from opengl.BaseObject.Base import Base
 
-class Face(Base):
+
+class Face:
 	"""
-		this is an interface for generating an polygon in PyGEF
+		this is an interface for generating an polygon in PyGEF, this is also the first abstract Object.
+		This has no position because the position of the object is regulated by its VertexMembers.
 	"""
 
 	def __init__(self):
-		super().__init__()
 		self.vertexMembers = []
 
 	def __str__(self):
