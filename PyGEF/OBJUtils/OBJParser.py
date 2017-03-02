@@ -52,7 +52,7 @@ class OBJParser():
         faceData.pop(0)
         newFace = Face()
 
-        for facemember in fa:
+        for facemember in faceData:
             newFace.addVertex(self.vertex[eval(facemember)])
 
         self.faces.append(newFace)

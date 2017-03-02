@@ -12,6 +12,8 @@ engines:
     enabled: true
   radon:
     enabled: true
+    exclude_fingerprints:
+    - 80bbea1ce54b60854948dbfbe4d075a9
 ratings:
   paths:
   - "**.inc"
