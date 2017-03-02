@@ -1,9 +1,5 @@
 __author__ = 'nielsvanschooten'
-from Base import Base
-
-
-
-
+from PyGEF.BaseObject.Base import Base
 
 class Mesh(Base):
 	"""
