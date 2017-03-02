@@ -3,6 +3,11 @@
 The python opengl library framework goal is to make a modular realtime 3d engine framework.
 Modularity in such a way that you can replace the module with your own module if you want.
 
+## Code Climate integration
+[![Issue Count](https://lima.codeclimate.com/github/HeadhunterXamd/PyOpenGLEngine/badges/issue_count.svg)](https://lima.codeclimate.com/github/HeadhunterXamd/PyOpenGLEngine)
+
+
+
 ## opengl
 
 | BaseObject | OBJUtils | openGLInterface | pathUtils | Renderer |
