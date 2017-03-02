@@ -1,4 +1,4 @@
-__author__ = 'niels'
+__author__ = 'nielsvanschooten@gmail.com'
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
@@ -49,33 +49,3 @@ def render():
 
 	glutSwapBuffers()
 
-
-### causes an null reference error for the glContext.
-
-# class renderer():
-# 	def __init__(self, width, height):
-# 		# A general OpenGL initialization function.  Sets all of the initial parameters.
-# 		glClearColor(0.0, 0.0, 0.0, 0.0)  # This Will Clear The Background Color To Black
-# 		glClearDepth(1.0)  # Enables Clearing Of The Depth Buffer
-# 		glDepthFunc(GL_LESS)  # The Type Of Depth Test To Do
-# 		glEnable(GL_DEPTH_TEST)  # Enables Depth Testing
-# 		glShadeModel(GL_SMOOTH)  # Enables Smooth Color Shading
-#
-# 		glMatrixMode(GL_PROJECTION)
-# 		glLoadIdentity()  # Reset The Projection Matrix
-# 		# Calculate The Aspect Ratio Of The Window
-# 		gluPerspective(45.0, float(width) / float(height), 0.1, 100.0)
-#
-# 		glMatrixMode(GL_MODELVIEW)
-#
-#
-# 	def render(self, *args):
-# 		if len(args) > 0:
-# 			return
-# 		# test
-# 		# test2
-# 		else:
-# 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)  # // Clear Screen And Depth Buffer
-# 			glLoadIdentity()  # // Reset The Current Modelview Matrix
-#
-# 			glutSwapBuffers()

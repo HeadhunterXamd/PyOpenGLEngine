@@ -103,7 +103,7 @@ def main():
 	# if it weren't for the global declaration at the start of main.
 	window = glutCreateWindow("Jeff Molofee's GL Code Tutorial ... NeHe '99")
 
-   	# Register the drawing function with glut, BUT in Python land, at least using PyOpenGL, we need to
+	# Register the drawing function with glut, BUT in Python land, at least using PyOpenGL, we need to
 	# set the function pointer and invoke a function to actually register the callback, otherwise it
 	# would be very much like the C version of the code.
 	glutDisplayFunc(DrawGLScene)
